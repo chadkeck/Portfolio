@@ -1,0 +1,232 @@
+a {
+  text-decoration: none;
+  color: black; }
+
+body {
+  background-color: #ddd;
+  height: 200%;
+  /*
+  background: url( ../images/bg_gray.png ) repeat-x center;
+  */ }
+
+.project-box {
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  background-position: -9999px, -9999px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background-color: #fff;
+  background-repeat: no-repeat; }
+  .project-box h5 {
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    color: #999;
+    font-family: Impact;
+    font-size: 38px;
+    line-height: 1;
+    padding: 8px 0 10px 8px;
+    text-shadow: 1px 1px #ddd, 2px 2px #ddd, 3px 3px #ddd; }
+  .project-box p {
+    /*
+    text-align: justify;
+    */
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Georgia, "Times New Roman", serif;
+    margin: 4px;
+    padding: 0 0 10px 8px;
+    color: #999; }
+
+.project-box:hover {
+  -webkit-box-shadow: 0 0em 0.6em black;
+  -moz-box-shadow: 0 0em 0.6em black;
+  -o-box-shadow: 0 0em 0.6em black;
+  box-shadow: 0 0em 0.6em black;
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -o-transform: scale(1.03);
+  transform: scale(1.03);
+  /* default hover scheme is green */
+  background-color: #4ae83a;
+  background-position: 90% 90%;
+  z-index: 10; }
+  .project-box:hover h5 {
+    color: white;
+    text-shadow: 1px 1px #008500, 2px 2px #008500, 3px 3px #008500, 4px 4px #008500, 5px 5px #008500, 6px 6px #008500; }
+  .project-box:hover p {
+    color: black; }
+  .project-box:hover h5 {
+    left: -3px;
+    top: -3px; }
+
+.project-box.red-box:hover {
+  background-color: #a60000; }
+  .project-box.red-box:hover h5 {
+    color: white;
+    text-shadow: 1px 1px red, 2px 2px red, 3px 3px red, 4px 4px red, 5px 5px red, 6px 6px red; }
+  .project-box.red-box:hover p {
+    color: white; }
+
+.project-box.orange-box:hover {
+  background-color: #ffaa00; }
+  .project-box.orange-box:hover h5 {
+    color: white;
+    text-shadow: 1px 1px #ffde40, 2px 2px #ffde40, 3px 3px #ffde40, 4px 4px #ffde40, 5px 5px #ffde40, 6px 6px #ffde40; }
+  .project-box.orange-box:hover p {
+    color: white; }
+
+.project-box.green-box:hover {
+  background-color: #009500; }
+  .project-box.green-box:hover h5 {
+    color: white;
+    text-shadow: 1px 1px #00cc00, 2px 2px #00cc00, 3px 3px #00cc00, 4px 4px #00cc00, 5px 5px #00cc00, 6px 6px #00cc00; }
+  .project-box.green-box:hover p {
+    color: white; }
+
+.project-box.purple-box:hover {
+  background-color: #9f3ed5; }
+  .project-box.purple-box:hover h5 {
+    color: white;
+    text-shadow: 1px 1px #c98fea, 2px 2px #c98fea, 3px 3px #c98fea, 4px 4px #c98fea, 5px 5px #c98fea, 6px 6px #c98fea; }
+  .project-box.purple-box:hover p {
+    color: white; }
+
+.project-box.gray-box:hover {
+  background-color: white; }
+  .project-box.gray-box:hover h5 {
+    color: #cccccc;
+    text-shadow: 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black, 5px 5px black, 6px 6px black; }
+  .project-box.gray-box:hover p {
+    color: black; }
+
+.project-box.blue-box:hover {
+  background-color: #4f4fd9; }
+  .project-box.blue-box:hover h5 {
+    color: white;
+    text-shadow: 1px 1px #8fc1e8, 2px 2px #8fc1e8, 3px 3px #8fc1e8, 4px 4px #8fc1e8, 5px 5px #8fc1e8, 6px 6px #8fc1e8; }
+  .project-box.blue-box:hover p {
+    color: white; }
+
+.project-box.black-box:hover {
+  background-color: black; }
+  .project-box.black-box:hover h5 {
+    color: #777777;
+    text-shadow: 1px 1px white, 2px 2px white, 3px 3px white, 4px 4px white, 5px 5px white, 6px 6px white; }
+  .project-box.black-box:hover p {
+    color: white; }
+
+.project-box.box-big {
+  height: 250px; }
+
+.project-box.box-medium {
+  height: 200px; }
+
+.project-box.box-small {
+  height: 150px; }
+
+.divider {
+  padding-top: 24px;
+  text-align: left;
+  font-family: "tandelle-1", "tandelle-2", Impact;
+  font-size: 64px;
+  color: white;
+  text-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
+  position: relative;
+  top: 0px;
+  left: 0px; }
+
+/*
+.divider:hover {
+	@include all-transition( 0.12s );
+	text-shadow: 1px 1px #E58, 2px 2px #E58, 3px 3px #E58, 4px 4px #E58, 5px 5px #E58, 6px 6px #E58, 7px 7px #E58, 8px 8px #E58;
+	top: -3px;
+	left: -3px;
+}
+	*/
+ul.social {
+  list-style: none; }
+
+ul.social li {
+  font-size: 1.2em;
+  padding: 12px;
+  font-weight: bold;
+  text-align: right; }
+
+#big-name {
+  text-transform: uppercase; }
+  #big-name #first-name {
+    text-shadow: 1px 1px #ff9900, 2px 2px #ff9900, 3px 3px #ff9900, 4px 4px #ff9900, 5px 5px #ff9900, 6px 6px #ff9900, 7px 7px #ff9900, 8px 8px #ff9900;
+    top: -3px;
+    left: -3px; }
+  #big-name #middle-name {
+    text-shadow: 1px 1px #5588ee, 2px 2px #5588ee, 3px 3px #5588ee, 4px 4px #5588ee, 5px 5px #5588ee, 6px 6px #5588ee, 7px 7px #5588ee, 8px 8px #5588ee;
+    top: -3px;
+    left: -3px; }
+  #big-name #last-name {
+    text-shadow: 1px 1px #ee5588, 2px 2px #ee5588, 3px 3px #ee5588, 4px 4px #ee5588, 5px 5px #ee5588, 6px 6px #ee5588, 7px 7px #ee5588, 8px 8px #ee5588;
+    top: -3px;
+    left: -3px; }
+
+#project-divider {
+  text-shadow: 1px 1px #66cc00, 2px 2px #66cc00, 3px 3px #66cc00, 4px 4px #66cc00, 5px 5px #66cc00, 6px 6px #66cc00, 7px 7px #66cc00, 8px 8px #66cc00;
+  top: -3px;
+  left: -3px; }
+
+#project-timeline-divider {
+  text-shadow: 1px 1px #3399cc, 2px 2px #3399cc, 3px 3px #3399cc, 4px 4px #3399cc, 5px 5px #3399cc, 6px 6px #3399cc, 7px 7px #3399cc, 8px 8px #3399cc;
+  top: -3px;
+  left: -3px; }
+
+#resume-divider {
+  text-shadow: 1px 1px #6600ff, 2px 2px #6600ff, 3px 3px #6600ff, 4px 4px #6600ff, 5px 5px #6600ff, 6px 6px #6600ff, 7px 7px #6600ff, 8px 8px #6600ff;
+  top: -3px;
+  left: -3px; }
+
+#online-presense-divider {
+  text-shadow: 1px 1px #33cc00, 2px 2px #33cc00, 3px 3px #33cc00, 4px 4px #33cc00, 5px 5px #33cc00, 6px 6px #33cc00, 7px 7px #33cc00, 8px 8px #33cc00;
+  top: -3px;
+  left: -3px;
+  text-align: right; }
+
+#box-wizbang {
+  /*
+  @include sliding-background( 150%, "../images/wizbang.png" );
+  */ }
+
+.body-text {
+  padding-bottom: 2em;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.2em;
+  line-height: 150%; }
+
+/*
+#f-wufoo {
+background-image: url(images/css-tricks.png);
+background-position: 290px -968px;
+}
+	#f-wufoo:hover  {
+	background-color: #c03823;
+	background-position: 186px -968px;
+}
+	#f-wufoo:hover p {
+	color: #fee17f;
+}
+
+	#f-lynda           { background-image: url(images/css-tricks.png); background-position: 290px -1128px; }             #f-lynda:hover { background-color: #fed300; background-position: 186px -1128px; }        #f-lynda:hover p { color: #9f6618; }
+	#f-diw             { background-image: url(images/css-tricks.png); background-position: 290px -1288px; }               #f-diw:hover { background-color: #237abe; background-position: 186px -1288px; }
+	#f-qod             { background-image: url(images/css-tricks.png); background-position: 290px -1448px; }               #f-qod:hover { background-color: #37597a; background-position: 186px -1448px; }
+	#f-htmlipsum       { background-image: url(images/css-tricks.png); background-position: 290px -1608px; }         #f-htmlipsum:hover { background-color: #333333; background-position: 186px -1608px; }  #f-qod:hover p { color: #adbde3; }
+	#f-bookshelf       { background-image: url(images/css-tricks.png); background-position: 290px -1768px; }         #f-bookshelf:hover { background-color: #ff8400; background-position: 186px -1768px; } #f-html-ipsum:hover p {  color: #fff8da; }
+	#f-twitter         { background-image: url(images/css-tricks.png); background-position: 290px -1928px; }           #f-twitter:hover { background-color: #4ed2fe; background-position: 186px -1928px; }
+	#f-forrst          { background-image: url(images/css-tricks.png); background-position: 290px -2088px; }            #f-forrst:hover { background-color: #203f16; background-position: 186px -2088px; } #f-forrst:hover p { color: #92c59c; }
+ */

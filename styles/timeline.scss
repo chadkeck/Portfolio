@@ -1,0 +1,74 @@
+@import "shared.scss";
+
+$container-width: 960px;
+$year-width: $container-width / 8.25;
+
+$year-width-percent: 12.5%;
+
+@mixin make-years( $year-start, $years ) {
+	left: 100% - (((2011 - $year-start) + 1) * 12.5%);
+	width: 12.5% * ($years + 1);
+}
+
+ul.events {
+	list-style-type: none;
+	margin: 0;
+	padding: 0 0 20px 0;
+}
+
+ul.events li {
+	@include border-radius( 10px );
+
+	background: #fff;
+	border: 1px solid #ddd;
+	color: #707070;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 6px;
+	padding: 3px 0;
+	position: relative;
+	text-align: center;
+}
+
+ul.events li em {
+	color: #aaa;
+	font-weight: normal;
+	font-size: 0.9em;
+}
+
+ul.intervals {
+	list-style-type: none;
+	padding: 0;
+	display: block;
+}
+
+ul.intervals li {
+	background-color: #fff;
+	border-right: 1px solid #ccc;
+	color: #999;
+	float: left;
+	font-size: 1.2em;
+	margin: 0;
+	/*
+	padding: 15px 0;
+	*/
+	text-align: center;
+	width: $year-width
+}
+
+ul.intervals li.first {
+	border-left: 1px solid #ccc;
+}
+
+#qt-ui-time { 			@include make-years( 2009, 2 ); }
+#sxb-time { 			@include make-years( 2004, 1 ); }
+#winmhr-time { 		@include make-years( 2010, 1 ); }
+#wizbang-time { 		@include make-years( 2008, 3 ); }
+#sprites-out-time { 	@include make-years( 2006, 0 ); }
+#firefox-time { 		@include make-years( 2010, 1 ); }
+#osx-widget-time { 	@include make-years( 2010, 0 ); }
+#clu-time { 			@include make-years( 2011, 0 ); }
+#chronistic-time { 	@include make-years( 2010, 1 ); }
+#hammhr-time { 		@include make-years( 2011, 0 ); }
+#proto-grid-time { 	@include make-years( 2011, 0 ); }
+#langgrid-time { 		@include make-years( 2011, 0 ); }

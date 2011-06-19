@@ -1,0 +1,308 @@
+$box-shadow-x: 0;
+$box-shadow-y: 0em;
+$box-shadow-blur: 0.6em;
+
+$default-box-shadow-color: #948e93;
+
+@mixin popout( $color ) {
+	text-shadow: 1px 1px $color, 2px 2px $color, 3px 3px $color, 4px 4px $color, 5px 5px $color, 6px 6px $color, 7px 7px $color, 8px 8px $color;
+	top: -3px;
+	left: -3px;
+}
+
+@mixin box-shadow( $color ) {
+	-webkit-box-shadow: $box-shadow-x $box-shadow-y $box-shadow-blur $color;
+		-moz-box-shadow: $box-shadow-x $box-shadow-y $box-shadow-blur $color;
+		  -o-box-shadow: $box-shadow-x $box-shadow-y $box-shadow-blur $color;
+			  box-shadow: $box-shadow-x $box-shadow-y $box-shadow-blur $color;
+}
+
+@mixin transitionable( $property, $time ) {
+	-webkit-transition: $property $time linear;
+		-moz-transition: $property $time linear;
+		  -o-transition: $property $time linear;
+			  transition: $property $time linear;
+}
+
+@mixin all-transition( $time ) {
+	-webkit-transition: all $time linear;
+		-moz-transition: all $time linear;
+		  -o-transition: all $time linear;
+			  transition: all $time linear;
+}
+
+@mixin zoom( $factor ) {
+	-webkit-transform: scale( $factor );
+		-moz-transform: scale( $factor );
+		  -o-transform: scale( $factor );
+			  transform: scale( $factor );
+}
+
+@mixin sliding-background( $x-pos, $image ) {
+	@include transitionable( background-position, 0.2s );
+	background-position: $x-pos 90%;
+	background-image: url( $image );
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+body {
+	background-color: #ddd;
+	height: 200%;
+
+	/*
+	background: url( ../images/bg_gray.png ) repeat-x center;
+	*/
+}
+
+#project-container {
+}
+
+.project-box {
+	@include transitionable( all, 0.2s );
+
+	background-position: -9999px, -9999px;
+
+	margin-top: 8px;
+	margin-bottom: 8px;
+
+	position: relative;
+	top: 0px;
+	left: 0px;
+
+	background-color: #fff;
+
+	background-repeat: no-repeat;
+
+	h5 {
+		@include all-transition(0.1s);
+		position: relative;
+		top: 0px;
+		left: 0px;
+		color: #999;
+
+		font-family: Impact;
+		font-size: 38px;
+		line-height: 1;
+		padding: 8px 0 10px 8px;
+		text-shadow: 1px 1px #ddd, 2px 2px #ddd, 3px 3px #ddd;
+	}
+
+	p {
+		/*
+		text-align: justify;
+		*/
+		font-size: 16px;
+		line-height: 1.5;
+		font-family: Georgia, "Times New Roman", serif;
+		margin: 4px;
+		padding: 0 0 10px 8px;
+		color: #999;
+	}
+
+}
+
+@mixin box-color-scheme( $bg-color, $header-color, $body-color, $header-shadow-color ) {
+	background-color: $bg-color;
+
+	h5 {
+		color: $header-color;
+		text-shadow: 1px 1px $header-shadow-color, 2px 2px $header-shadow-color, 3px 3px $header-shadow-color, 4px 4px $header-shadow-color, 5px 5px $header-shadow-color, 6px 6px $header-shadow-color;
+	}
+
+	p {
+		color: $body-color;
+	}
+}
+
+.project-box:hover {
+	@include box-shadow( black );
+	@include zoom( 1.03 );
+	/* default hover scheme is green */
+	@include box-color-scheme( #4ae83a, #fff, black, #008500 );
+
+	background-position: 90% 90%;
+	z-index: 10;
+
+	h5 {
+		left: -3px;
+		top: -3px;
+	}
+}
+
+.project-box.red-box:hover {
+	@include box-color-scheme( #a60000, white, white, #ff0000 );
+}
+
+.project-box.orange-box:hover {
+	@include box-color-scheme( #fa0, white, white, #ffde40 );
+}
+
+.project-box.green-box:hover {
+	@include box-color-scheme( #009500, white, white, #00cc00 );
+}
+
+.project-box.purple-box:hover {
+	@include box-color-scheme( #9f3ed5, white, white, #c98fea );
+}
+
+.project-box.gray-box:hover {
+	@include box-color-scheme( #fff, #ccc, black, black );
+}
+
+.project-box.blue-box:hover {
+	@include box-color-scheme( #4f4fd9, white, white, #8fc1e8 );
+}
+
+.project-box.black-box:hover {
+	@include box-color-scheme( #000, #777, white, white );
+}
+
+.project-box.box-big {
+	height: 250px;
+}
+
+.project-box.box-medium {
+	height: 200px;
+}
+
+.project-box.box-small {
+	height: 150px;
+}
+
+.divider {
+	padding-top: 24px;
+	text-align: left;
+	font-family: "tandelle-1", "tandelle-2", Impact;
+	font-size: 64px;
+	color: white;
+	text-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
+
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+/*
+.divider:hover {
+	@include all-transition( 0.12s );
+	text-shadow: 1px 1px #E58, 2px 2px #E58, 3px 3px #E58, 4px 4px #E58, 5px 5px #E58, 6px 6px #E58, 7px 7px #E58, 8px 8px #E58;
+	top: -3px;
+	left: -3px;
+}
+	*/
+
+ul.social {
+	list-style: none;
+}
+
+ul.social li {
+	font-size: 1.2em;
+	padding: 12px;
+	font-weight: bold;
+	text-align: right;
+}
+
+#big-name {
+	text-transform: uppercase;
+	#first-name {
+		@include popout( #f90 );
+	}
+	#middle-name {
+		@include popout( #58e );
+	}
+	#last-name {
+		@include popout( #e58 );
+	}
+}
+
+#project-divider {
+	@include popout( #6c0 );
+}
+
+#project-timeline-divider {
+	@include popout( #39c );
+}
+
+#resume-divider {
+	@include popout( #60f );
+}
+
+#online-presense-divider {
+	@include popout( #3c0 );
+	text-align: right;
+}
+
+#box-wizbang {
+	/*
+	@include sliding-background( 150%, "../images/wizbang.png" );
+	*/
+}
+
+#box-winmhr {
+}
+
+#box-chronistic {
+}
+
+#box-clu {
+}
+
+#box-hammhr {
+}
+
+#box-resound {
+}
+
+#box-firefox {
+}
+
+#box-proto {
+}
+
+#box-osx-widget {
+}
+
+#box-langrid {
+}
+
+#box-qt-ui {
+}
+
+#box-sprites-out {
+}
+
+#box-sxb {
+}
+
+.body-text {
+	padding-bottom: 2em;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 1.2em;
+	line-height: 150%;
+}
+
+/*
+#f-wufoo {
+background-image: url(images/css-tricks.png);
+background-position: 290px -968px;
+}
+	#f-wufoo:hover  {
+	background-color: #c03823;
+	background-position: 186px -968px;
+}
+	#f-wufoo:hover p {
+	color: #fee17f;
+}
+
+	#f-lynda           { background-image: url(images/css-tricks.png); background-position: 290px -1128px; }             #f-lynda:hover { background-color: #fed300; background-position: 186px -1128px; }        #f-lynda:hover p { color: #9f6618; }
+	#f-diw             { background-image: url(images/css-tricks.png); background-position: 290px -1288px; }               #f-diw:hover { background-color: #237abe; background-position: 186px -1288px; }
+	#f-qod             { background-image: url(images/css-tricks.png); background-position: 290px -1448px; }               #f-qod:hover { background-color: #37597a; background-position: 186px -1448px; }
+	#f-htmlipsum       { background-image: url(images/css-tricks.png); background-position: 290px -1608px; }         #f-htmlipsum:hover { background-color: #333333; background-position: 186px -1608px; }  #f-qod:hover p { color: #adbde3; }
+	#f-bookshelf       { background-image: url(images/css-tricks.png); background-position: 290px -1768px; }         #f-bookshelf:hover { background-color: #ff8400; background-position: 186px -1768px; } #f-html-ipsum:hover p {  color: #fff8da; }
+	#f-twitter         { background-image: url(images/css-tricks.png); background-position: 290px -1928px; }           #f-twitter:hover { background-color: #4ed2fe; background-position: 186px -1928px; }
+	#f-forrst          { background-image: url(images/css-tricks.png); background-position: 290px -2088px; }            #f-forrst:hover { background-color: #203f16; background-position: 186px -2088px; } #f-forrst:hover p { color: #92c59c; }
+ */
