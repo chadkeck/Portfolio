@@ -52,10 +52,10 @@ body {
   -moz-box-shadow: 0 0em 0.6em black;
   -o-box-shadow: 0 0em 0.6em black;
   box-shadow: 0 0em 0.6em black;
-  -webkit-transform: scale(1.03);
-  -moz-transform: scale(1.03);
-  -o-transform: scale(1.03);
-  transform: scale(1.03);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
   /* default hover scheme is green */
   background-color: #4ae83a;
   background-position: 90% 90%;
@@ -155,12 +155,14 @@ body {
 	*/
 ul.social {
   list-style: none; }
-
-ul.social li {
-  font-size: 1.2em;
-  padding: 12px;
-  font-weight: bold;
-  text-align: right; }
+  ul.social li {
+    text-shadow: 1px 1px #3399cc, 2px 2px #3399cc, 3px 3px #3399cc;
+    font-size: 1.2em;
+    padding: 11px;
+    font-weight: bold;
+    text-align: right; }
+  ul.social a {
+    color: white; }
 
 #big-name {
   text-transform: uppercase; }
@@ -204,10 +206,10 @@ ul.social li {
   */ }
 
 .body-text {
-  padding-bottom: 2em;
+  padding-bottom: 1.0em;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.2em;
-  line-height: 150%; }
+  font-size: 1.4em;
+  line-height: 160%; }
 
 /*
 #f-wufoo {

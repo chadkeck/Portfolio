@@ -4,6 +4,10 @@ $box-shadow-blur: 0.6em;
 
 $default-box-shadow-color: #948e93;
 
+@mixin small-popout( $color ) {
+	text-shadow: 1px 1px $color, 2px 2px $color, 3px 3px $color;
+}
+
 @mixin popout( $color ) {
 	text-shadow: 1px 1px $color, 2px 2px $color, 3px 3px $color, 4px 4px $color, 5px 5px $color, 6px 6px $color, 7px 7px $color, 8px 8px $color;
 	top: -3px;
@@ -120,7 +124,7 @@ body {
 
 .project-box:hover {
 	@include box-shadow( black );
-	@include zoom( 1.03 );
+	@include zoom( 1.05 );
 	/* default hover scheme is green */
 	@include box-color-scheme( #4ae83a, #fff, black, #008500 );
 
@@ -197,14 +201,20 @@ body {
 
 ul.social {
 	list-style: none;
+
+	li {
+		@include small-popout( #39c );
+		font-size: 1.2em;
+		padding: 11px;
+		font-weight: bold;
+		text-align: right;
+	}
+
+	a {
+		color: white;
+	}
 }
 
-ul.social li {
-	font-size: 1.2em;
-	padding: 12px;
-	font-weight: bold;
-	text-align: right;
-}
 
 #big-name {
 	text-transform: uppercase;
@@ -279,10 +289,10 @@ ul.social li {
 }
 
 .body-text {
-	padding-bottom: 2em;
+	padding-bottom: 1.0em;
 	font-family: Georgia, "Times New Roman", serif;
-	font-size: 1.2em;
-	line-height: 150%;
+	font-size: 1.4em;
+	line-height: 160%;
 }
 
 /*
