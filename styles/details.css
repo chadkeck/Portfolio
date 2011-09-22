@@ -46,6 +46,9 @@ a {
   -o-box-shadow: 0px 3px 8px black;
   box-shadow: 0px 3px 8px black; }
 
+#browser-hash-image {
+  background-image: url(../images/browser-hash.png); }
+
 #wizbang-image {
   background-image: url(../images/wizbang.png); }
 
@@ -107,3 +110,9 @@ a {
 
 .button.green {
   background-color: green; }
+
+.button.blue {
+  background-color: blue; }
+
+.button.browserhash {
+  background-color: #7188a8; }

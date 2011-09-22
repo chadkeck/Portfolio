@@ -1,104 +1,112 @@
 @import "shared.scss";
 
 html {
-	font-family: Georgia, "Times New Roman", serif;
+    font-family: Georgia, "Times New Roman", serif;
 }
 
 body {
-	font-size: 1.2em;
-	line-height: 150%;
+    font-size: 1.2em;
+    line-height: 150%;
 }
 
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .title {
-	font-size: 2.4em;
-	margin-top: 1em;
-	margin-bottom: 0.7em;
+    font-size: 2.4em;
+    margin-top: 1em;
+    margin-bottom: 0.7em;
 
-	padding-bottom: 0.4em;
-	border-bottom: 1px solid #cdcdcc;
+    padding-bottom: 0.4em;
+    border-bottom: 1px solid #cdcdcc;
 }
 
 .body-text {
-	padding-bottom: 2em;
+    padding-bottom: 2em;
 }
 
 .list-title {
-	color: #bbb;
-	font-size: 1.6em;
-	margin-bottom: 1.3em;
+    color: #bbb;
+    font-size: 1.6em;
+    margin-bottom: 1.3em;
 }
 
 .publication {
-	font-size: 0.8em;
-	padding-left: 10px;
-	font-weight: bold;
+    font-size: 0.8em;
+    padding-left: 10px;
+    font-weight: bold;
 }
 
 .date {
-	font-size: 0.8em;
-	color: #aaa;
+    font-size: 0.8em;
+    color: #aaa;
 }
 
 .project-image {
-	float: left;
-	width: 128px;
-	height: 128px;
-	margin-top: 40px;
-	margin-left: 20px;
-	background-repeat: no-repeat;
+    float: left;
+    width: 128px;
+    height: 128px;
+    margin-top: 40px;
+    margin-left: 20px;
+    background-repeat: no-repeat;
 }
 
 #sprites-out-screenshot {
-	-webkit-box-shadow: 0px 3px 8px black;
-		-moz-box-shadow: 0px 3px 8px black;
-		  -o-box-shadow: 0px 3px 8px black;
-			  box-shadow: 0px 3px 8px black;
+    -webkit-box-shadow: 0px 3px 8px black;
+    -moz-box-shadow:    0px 3px 8px black;
+    -o-box-shadow:      0px 3px 8px black;
+    box-shadow:         0px 3px 8px black;
 }
 
-#wizbang-image { background-image: url( ../images/wizbang.png ); }
-#dragon-image { background-image: url( ../images/dragon.png ); }
-#clu-image { background-image: url( ../images/clu.png ); }
-#nintendo-ds-image { background-image: url( ../images/ds.png ); }
-#hammhr-image { background-image: url( ../images/hammer.png ); }
-#sxb-image { background-image: url( ../images/xbox_logo.gif ); }
-#firefox-mhr-image { background-image: url( ../images/firefox_icon.png ); }
-#chronistic-image { background-image: url( ../images/clock-icon.png ); }
-#osx-widget-image { background-image: url( ../images/osx-dashboard-icon.png ); }
-#osx-widget-image { background-image: url( ../images/osx-dashboard-icon.png ); }
-#langrid-image { background-image: url( ../images/langrid-icon.png ); }
+#browser-hash-image {   background-image: url( ../images/browser-hash.png ); }
+#wizbang-image {        background-image: url( ../images/wizbang.png ); }
+#dragon-image {         background-image: url( ../images/dragon.png ); }
+#clu-image {            background-image: url( ../images/clu.png ); }
+#nintendo-ds-image {    background-image: url( ../images/ds.png ); }
+#hammhr-image {         background-image: url( ../images/hammer.png ); }
+#sxb-image {            background-image: url( ../images/xbox_logo.gif ); }
+#firefox-mhr-image {    background-image: url( ../images/firefox_icon.png ); }
+#chronistic-image {     background-image: url( ../images/clock-icon.png ); }
+#osx-widget-image {     background-image: url( ../images/osx-dashboard-icon.png ); }
+#osx-widget-image {     background-image: url( ../images/osx-dashboard-icon.png ); }
+#langrid-image {        background-image: url( ../images/langrid-icon.png ); }
 
 .button {
-	@include border-radius( 5px );
-	padding: 5px 10px;
-	display: inline;
-	background: #777 url(../images/button_bg.png) repeat-x bottom;
-	border: none;
-	color: white;
-	cursor: pointer;
-	font-weight: bold;
-	text-shadow: 1px 1px #666;
+    @include border-radius( 5px );
+    padding: 5px 10px;
+    display: inline;
+    background: #777 url(../images/button_bg.png) repeat-x bottom;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    text-shadow: 1px 1px #666;
 }
 
 .button:hover {
-	background-position: 0 center;
+    background-position: 0 center;
 }
 
 .button:active {
-	background-position: 0 top;
-	position: relative;
-	top: 1px;
-	padding: 6px 10px 4px;
+    background-position: 0 top;
+    position: relative;
+    top: 1px;
+    padding: 6px 10px 4px;
 }
 
 .button.orange {
-	background-color: orange;
+    background-color: orange;
 }
 
 .button.green {
-	background-color: green;
+    background-color: green;
 }
 
+.button.blue {
+    background-color: blue;
+}
+
+.button.browserhash {
+    background-color: #7188a8;
+}

@@ -37,7 +37,7 @@ ul.intervals li {
   margin: 0;
   /*
   padding: 15px 0;
-  */
+   */
   text-align: center;
   width: 116.364px; }
 
@@ -89,5 +89,9 @@ ul.intervals li.first {
   width: 12.5%; }
 
 #langgrid-time {
+  left: 87.5%;
+  width: 12.5%; }
+
+#browser-hash-time {
   left: 87.5%;
   width: 12.5%; }
