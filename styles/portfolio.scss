@@ -54,12 +54,8 @@ a {
 }
 
 body {
-	background-color: #ddd;
-	height: 200%;
-
-	/*
-	background: url( ../images/bg_gray.png ) repeat-x center;
-	*/
+	background-image: url( /resources/linen.png );
+    background-repeat: repeat;
 }
 
 #project-container {
