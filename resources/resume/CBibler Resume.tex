@@ -1,0 +1,152 @@
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
+
+\documentclass[margin]{res} 
+% the margin option causes section titles to appear to the left of body text 
+\textwidth=5.2in % increase textwidth to get smaller right margin
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+
+\begin{document} 
+ 
+\name{Chad K. Bibler\\[12pt]} % the \\[12pt] adds a blank line after name
+ 
+\address{{\bf Address} \\ 531 Carlysle Dr. \#7 \\ Clarendon Hills, IL 60514  \\
+        (630) 414-8700 }
+\address{{\bf } }
+
+\begin{resume} 
+ 
+\section{Objective} 
+Seeking a challenging and exciting software engineering career.
+
+\section{GitHub}
+https://github.com/chadkeck
+
+\section{Portfolio}
+http://portfolio.dregsoft.com
+
+\section{Professional \\ Experience}
+
+{\bf Software Engineer,} PEAK6 Investments, Inc.\\ Chicago, IL \hfill 9/2011 - Current
+\begin{itemize} \itemsep -2pt  % reduce space between items
+\item Tailored custom interfaces for an elite group of options traders.
+\item Replaced an expensive external tool with an internal app.
+\item Technologies used: WebSockets, HTML5, High performance JavaScript, CoffeeScript, jQuery, jQuery UI, Ruby on Rails, Capistrano, Git, SASS
+\end{itemize}
+
+{\bf UI/UX Developer,} eCD Market, Inc.\\ Chicago, IL \hfill 7/2011 - 9/2011
+\begin{itemize} \itemsep -2pt  % reduce space between items
+\item Eliminated intermittent Selenium browser testing failures, saving each developer and QA hours a week.
+\item Increased compatibility, speed, and consistency of app by large refactoring.
+\item Decreased code base size almost every day.
+\item Created the first UI guidelines for future development.
+\item Technologies used: jQuery, require.js, jQuery UI, jQuery Widget Factory, HTML, CSS, JavaScript, Erlang, REST, JSON, Selenium
+\end{itemize}
+
+{\bf Developer,} Team Cymru, Inc.\\ Burr Ridge, IL \hfill 1/2010 - 7/2011
+\begin{itemize} \itemsep -2pt  % reduce space between items
+\item Designed, implemented, and shipped Windows virus detector using C++ and Qt.  [http://winmhr.com]
+\item Created the world's first HTML5 powered, no file upload, no add-on download, virus scanner. [https://hammhr.team-cymru.org]
+\item Team Lead in creating our first Development Process.
+\item Developed multiple Python-backed internal webapps.
+\item Developed Firefox Add-on for checking downloaded files for malware. [https://addons.mozilla.org/en-US/firefox/addon/98431/]
+\item Developed OS X Dashboard widget for checking files for malware. [http://www.team-cymru.org/Services/MHR/Widget/]
+\item Technologies used: Qt4, HTML5, CSS3, Python 2.6, JavaScript, jQuery, AJAX, JSON, C++, Perl
+\end{itemize}
+
+{\bf Lead Developer,} WizBang \hfill 9/2008 - Current
+\begin{itemize} \itemsep -2pt  % reduce space between items
+\item Developed a visual programming language that compiles to valid C, C++, Java, and Python 2.4 code.
+\item Open-source C++/Qt 4 project for Linux, Windows, and Mac OS X for teaching procedural programming concepts to all ages.
+\item Built installers for Linux, Windows, and Mac OS X.
+\item Deployment and social marketing netted over 3,000 downloads in 48 hours.
+\item http://wizbang.sourceforge.net
+\end{itemize}
+
+{\bf Software Engineering Intern,} John Deere Electronic Engine Controls\\ Waterloo, IA \hfill 5/2009 - 8/2009, 5/2008 - 8/2008
+\begin{itemize} \itemsep -2pt  % reduce space between items
+\item Gathered requirements and implemented an electronic engine controller multi-calibration tool using Qt and Visual C++ 8.0.  The tool is used on John Deere assembly lines in four countries.
+\item Added code to a legacy MFC project to launch this tool.
+\item Implemented a proprietary data codec's software requirements for use by the calibration tool and other software systems within John Deere.
+\item Used Qt's XML parsing system and QFile, QTextStream to store and load user preferences.
+
+
+%\item Became familiar with Microsoft API technologies.
+%\item Implemented a small Microsoft Word document to XML (InfoPath) parsing script using Microsoft JScript.
+\end{itemize}
+
+{\bf Co-op Student Engineer,} John Deere Electronic Engine Controls\\ Waterloo, IA \hfill 8/2007 - 12/2007
+\begin{itemize} \itemsep -2pt  % reduce space between items
+\item Transformed unstable project with incomplete requirements into functioning application in four months ($\sim$10 KLOC++).
+%\item Utilized many Software Quality Assurance (SQA) testing methodologies, including: black-box testing, white-box testing, regression testing, use case testing, acceptance testing, and boundary value testing.
+\item Built user interface using QtDesigner to keep GUI code separate from logic implementation.
+%\item Implemented a tree view using a Model-View-Controller (MVC) architecture to lazily populate the interface for performance and memory reasons. 
+\item Custom drag and drop operations using QDragEvent, QDropEvent, and QMimeData for copying structures in the tree dramatically reduced redundant effort.
+\item Subclassed QDialog and used QTabWidget to create a tabbed user interface.
+\item Utilized QProcess to run dependent utility executables, keep the GUI responsive, and indicate progress to the user.
+\item Employed the QFileSystemWatcher to dynamically inform user if a file on disk had been modified.
+\item Incorporated the zlib library for compressing and zipping data rather than depending on an unreliable WinZip binary.
+\item Built graphical installers for Windows for five projects using InnoSetup 5.
+\end{itemize}
+ 
+{\bf Student Engineer,} John Deere Electronic Engine Controls\\ Waterloo, IA \hfill 6/2006 - 8/2007
+\begin{itemize} \itemsep -2pt  % reduce space between items
+\item Became thoroughly familiar with Nokia's Qt versions 3 and 4 for C++.
+\item Utilized Qt's Signal and Slot mechanism for communication between objects and to decrease class coupling and increase cohesion.
+\item Created C++ wrappers using Qt for MATLAB xPC Target API and ETAS' ES4440 Compact Failure Simulation Module.
+\item Developed desktop application ($\sim$15 KLOC++) using subclasses of QMainWindow and QDockWidget.
+%\item Incorporated the Qwt library for interactive dials with more features than QDial supports.
+%\item Utilized Visual Studio 2005, subversion, trac, bugzilla, and object oriented methods for development duties.
+\end{itemize}
+ 
+{\bf Student Programmer,} University of Northern Iowa\\ Cedar Falls, IA \hfill 11/2005 - 6/2006
+\begin{itemize} \itemsep -2pt  % reduce space between items
+\item Application and database development and maintenance.
+\item Languages used include: Perl, VBA, PHP, MySQL.
+\end{itemize}
+
+
+\section{Education} 
+{\bf Iowa State University,} Ames, IA \hfill Spring 2008 - Spring 2009 \\
+%Earned 123 semester credits (Senior status) toward Bachelor of Science in Computer Engineering.
+{\bf University of Northern Iowa,} Cedar Falls, IA \hfill Fall 2004 - Spring 2007
+%Earned 155 semester credits (Senior status) toward Bachelor of Science in Computer Science. 
+
+\section{Recognition}
+\begin{itemize} \itemsep -2pt  % reduce space between items
+\item Accepted into the Nokia Qt Ambassador Program in February 2011.
+\item Made the front page of Proggit and HN.
+\item Earned Cisco Certified Network Associate (CCNA) in 2004.
+\end{itemize}
+
+\section{Social}
+\begin{itemize} \itemsep -2pt  % reduce space between items
+
+\item Blog - http://blog.dregsoft.com
+\item Twitter - http://twitter.com/chadkeck
+\item GitHub - https://github.com/chadkeck
+\item SourceForge - https://sourceforge.net/users/cbibler
+\item StackOverflow - http://stackoverflow.com/users/203724/c-bibler
+\end{itemize}
+
+%\begin{figure}[H]
+%\centering
+%\includegraphics{/Users/cbibler/Downloads/My Resume/qt.png}
+%\end{figure}
+
+
+%{\bf Student Technician,} University of Northern Iowa\\ Cedar Falls, IA \hfill 8/2004 - 11/2005
+
+
+%\section{Recognition} 
+%\begin{itemize} \itemsep -2pt  % reduce space between items
+%\item Developing, maintaining, and supporting an open-source procedural programming teaching tool using Qt and C++, http://wizbang.sourceforge.net
+%\item Library development in C++ for character LCD by CrystalFontz Inc.
+%\item Script development for Slackware on Xbox Linux project.
+%\item Earned Cisco certification as a Cisco Certified Network Associate in July of 2004.
+%\end{itemize}
+
+ 
+\end{resume} 
+\end{document} 
